@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const SET_ARTWORKS = 'artworks/artworksReducer/SET_ARTWORKS';
-const URL = 'https://api.artic.edu/api/v1/artworks/search?q=modern&size=12&fields=id,title,image_id,artist_title';
+const URL = 'https://api.artic.edu/api/v1/artworks/search?q=modern&size=60&fields=id,image_id,title,date_display,artwork_type_title,dimensions,medium_display,department_title,artist_title,place_of_origin';
 
 const initialState = [];
 

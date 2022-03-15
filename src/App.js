@@ -11,7 +11,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={<ArtworksContainer />} />
-          <Route exact path="/ArtworkDetailsContainer" element={<ArtworkDetailsContainer />} />
+          <Route exact path="/artworkdetails/:id" element={<ArtworkDetailsContainer />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -17,7 +17,7 @@ const ArtworksContainer = () => {
     <div className="artworks-container">
       <ArtworksHeader />
       <h6 className="m-2 details-title">DETAILS BY ARTWORK</h6>
-      <div className="">
+      <div className="d-flex flex-wrap">
 
         { artworksState.map((item) => (
           <Artworks
