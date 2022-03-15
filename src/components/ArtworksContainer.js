@@ -16,7 +16,7 @@ const ArtworksContainer = () => {
   return (
     <div className="artworks-container">
       <ArtworksHeader />
-      <h6 className="m-2 details-title">DETAILS BY ARTWORK</h6>
+      <h6 className="text-start my-3 mx-5">DETAILS BY ARTWORK</h6>
       <div className="d-flex flex-wrap">
 
         { artworksState.map((item) => (

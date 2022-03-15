@@ -10,15 +10,53 @@ const ArtworkDetails = (props) => {
 
   return (
     <div className="div-detailed-card" key={id}>
-      <img src={painting} className="" alt="artwork" />
-      <p className="">{title}</p>
-      <p className="">{type}</p>
-      <p className="">{medium}</p>
-      <p className="">{dimensions}</p>
-      <p className="">{date}</p>
-      <p className="">{artist}</p>
-      <p className="">{from}</p>
-      <p className="">{category}</p>
+      <img src={painting} className="mt-5" alt="artwork" />
+      <div className="mx-5 my-5">
+        <table className="table">
+          <tbody>
+            <tr>
+              <th scope="row" className="text-start">Title:</th>
+              <td className="text-start">{title}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Type of Artwork:</th>
+              <td className="text-start">{type}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Medium:</th>
+              <td className="text-start">{medium}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Dimensions:</th>
+              <td className="text-start">{dimensions}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Date of Composition:</th>
+              <td className="text-start">{date}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Artist:</th>
+              <td className="text-start">{artist}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Country of Origin:</th>
+              <td className="text-start">{from}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+            <tr>
+              <th scope="row" className="text-start">Art Category:</th>
+              <td className="text-start">{category}</td>
+              <td><i className="fa fa-arrow-circle-o-right" aria-hidden="true" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
