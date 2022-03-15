@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import ArtworkDetailsContainer from './components/ArtworkDetailsContainer';
 import ArtworksContainer from './components/ArtworksContainer';
+import ArtworkDetailsContainer from './components/ArtworkDetailsContainer';
 
 function App() {
   return (

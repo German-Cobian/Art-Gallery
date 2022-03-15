@@ -1,19 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import ArtworksHeader from './ArtworksHeader';
 import Artworks from './Artworks';
+import { fetchArtworks } from '../redux/artworksApi';
 
-const ArtworksContainer = () => (
-  <div className="d-flex flex-column my-5">
-    <div className="border-bottom">
+const ArtworksContainer = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchArtworks());
+  }, []);
+
+  const artworksState = useSelector((state) => state.artworksReducer);
+
+  return (
+    <div className="artworks-container">
       <ArtworksHeader />
+      <h6 className="m-2 details-title">DETAILS BY ARTWORK</h6>
+      <div className="">
+
+        { artworksState.map((item) => (
+          <Artworks
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            image={item.image_id}
+            artist={item.artist_title}
+          />
+
+        ))}
+      </div>
     </div>
-    <div className="border-bottom">
-      <h2>Artworks Container Component</h2>
-    </div>
-    <div className="border-bottom">
-      <Artworks />
-    </div>
-  </div>
-);
+  );
+};
 
 export default ArtworksContainer;
