@@ -1,9 +1,19 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import ArtworkDetailsContainer from './components/ArtworkDetailsContainer';
+import ArtworksContainer from './components/ArtworksContainer';
 
 function App() {
   return (
     <div className="App">
-      <h4>This is a React-Redux app</h4>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<ArtworksContainer />} />
+          <Route exact path="/ArtworkDetailsContainer" element={<ArtworkDetailsContainer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
