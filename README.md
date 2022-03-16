@@ -2,8 +2,8 @@
 
 > "Modern-Art-Gallery" is a simple app that fetches Artworks in the Art Institute of Chicago from an API (`https://api.artic.edu/api/v1/artworks`) and displays their image as well as their title and creator data. It also allows for the user to select a specific artwork by clicking on it and to display more information on it ( date, type of artwork, dimensions, medium, provenance of artist, category in which the artwork is included).
 
-![Artworks](/src/assets/Screenshot1?raw=true "Artworks display")
-![Artworks](/src/assets/Screenshot2?raw=true "Artworks display")
+![Artworks](/public/Screenshot1?raw=true "Artworks display")
+![Artworks](/public/Screenshot2?raw=true "Artworks display")
 
 ### Live Demo
 
