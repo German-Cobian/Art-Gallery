@@ -8,7 +8,6 @@ const ArtworksHeader = () => (
     </div>
     <div className="mt-5 col-6">
       <h2 className="text-start">Art Institute of Chicago</h2>
-      <p className="text-start">60 awesome artworks</p>
     </div>
   </div>
 );

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const SET_ARTWORKS = 'artworks/artworksReducer/SET_ARTWORKS';
-const URL = 'https://api.artic.edu/api/v1/artworks/search?q=modern&size=60&fields=id,image_id,title,date_display,artwork_type_title,dimensions,medium_display,department_title,artist_title,place_of_origin';
+const SET_ARTWORKS = 'modern-art-gallery/artworksReducer/SET_ARTWORKS';
+const baseURL = 'https://api.artic.edu/api/v1/artworks/search?q=';
 
 const initialState = [];
 
@@ -10,8 +10,8 @@ const setArtworks = (payload) => ({
   payload,
 });
 
-export const fetchArtworks = () => async (dispatch) => {
-  const response = await axios.get(URL);
+export const fetchArtworks = (category) => async (dispatch) => {
+  const response = await axios.get(`${baseURL}${category}&size=60&fields=id,image_id,title,date_display,artwork_type_title,dimensions,medium_display,department_title,artist_title,place_of_origin'`);
   dispatch(setArtworks(response.data.data));
 };
 
