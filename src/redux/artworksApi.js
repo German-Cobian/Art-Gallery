@@ -11,7 +11,7 @@ const setArtworks = (payload) => ({
 });
 
 export const fetchArtworks = (category) => async (dispatch) => {
-  const response = await axios.get(`${baseURL}${category}&size=60&fields=id,image_id,title,date_display,artwork_type_title,dimensions,medium_display,department_title,artist_title,place_of_origin'`);
+  const response = await axios.get(`${baseURL}${category}&size=100&fields=id,image_id,title,date_display,artwork_type_title,dimensions,medium_display,department_title,artist_title,place_of_origin'`);
   dispatch(setArtworks(response.data.data));
 };
 

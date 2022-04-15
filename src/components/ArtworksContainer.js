@@ -22,13 +22,14 @@ const ArtworksContainer = () => {
   return (
     <div className="artworks-container">
       <ArtworksHeader />
-      <section className="d-flex flex-row" id="section__searchbar">
+      <section className="d-flex flex-row justify_content-around" id="section__searchbar">
         <p className="mx-5">Up to 60 awesome artworks per search:</p>
         <input
+          className="col-6"
           type="search"
           name="input__category"
           id="input__category"
-          placeholder="Search Category"
+          placeholder="Search term"
           onChange={onChangeSearchBar}
           value={searchValue}
         />
