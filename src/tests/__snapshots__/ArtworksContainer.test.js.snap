@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtworksContainer component matches ArtworksContainer component snapshot 1`] = `
+<div
+  className="artworks-container"
+>
+  <div
+    className="d-flex flex-row"
+  >
+    <div
+      className="my-5 col-8"
+    >
+      <img
+        alt="Guernica by Picasso"
+        className="col-10"
+        src="Guernica.jpeg"
+      />
+    </div>
+    <div
+      className="mt-5 col-6"
+    >
+      <h2
+        className="text-start"
+      >
+        Art Institute of Chicago
+      </h2>
+      <p
+        className="text-start"
+      >
+        60 awesome artworks
+      </p>
+    </div>
+  </div>
+  <h6
+    className="text-start my-3 mx-5"
+  >
+    DETAILS BY ARTWORK
+  </h6>
+  <div
+    className="d-flex flex-wrap"
+  />
+</div>
+`;
