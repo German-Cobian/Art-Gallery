@@ -8,7 +8,7 @@
 
 ### Live Demo
 
-https://determined-bose-a63559.netlify.app
+git@github.com:German-Cobian/Art-Gallery.git
 
 ### Video Demo of the Project
 
