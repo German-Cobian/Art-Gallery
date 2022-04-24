@@ -8,7 +8,7 @@
 
 ### Live Demo
 
-git@github.com:German-Cobian/Art-Gallery.git
+https://elaborate-sunflower-63cbfb.netlify.app/
 
 ### Video Demo of the Project
 
