@@ -8,7 +8,7 @@
 
 ### Live Demo
 
-https://determined-bose-a63559.netlify.app
+https://elaborate-sunflower-63cbfb.netlify.app/
 
 ### Video Demo of the Project
 
