@@ -1,8 +1,8 @@
 # Art-Gallery
 
-This React-Redux app fetches artworks from the [Art Institute of Chicago API] (https://api.artic.edu/api/v1/artworks).
+This React-Redux app fetches artworks from the [Art Institute of Chicago API](https://api.artic.edu/api/v1/artworks).
 
-From the home page the user can input a term related to the artwork that they are searching for (could be the name of the artwork, the srtist, the syle, etc.):
+From the home page the user can input a term related to the artwork that they are searching for (could be the name of the artwork, the artist, the style, etc.).
 
 ![AIC Home](/src/assets/Screenshot1.png?raw=true "AIC Home")
 
@@ -10,7 +10,7 @@ The app will then render a listing of all the artworks that match the search cri
 
 ![Search results](/src/assets/Screenshot2.png?raw=true "Search results")
 
-It also allows for the user to select a specific artwork by clicking on it and to display more information on it ( date, type of artwork, dimensions, medium, provenance of artist, category in which the artwork is included).
+It also allows for the user to select a specific artwork by clicking on it, then goes on to display more information on that artwork ( date, type of artwork, dimensions, medium, provenance of artist, category in which the artwork is included).
 
 ![Artwork in detail](/src/assets/Screenshot3.png?raw=true "Artwork in detail")
 
@@ -68,5 +68,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-[Creative Commons]
 [MIT licensed](https://github.com/German-Cobian/Art-Gallery/blob/main/LICENSE).
