@@ -1,10 +1,18 @@
-# Modern-Art-Gallery
+# Art-Gallery
 
-> "Modern-Art-Gallery" is a simple app that fetches Artworks in the Art Institute of Chicago from an API (`https://api.artic.edu/api/v1/artworks`) and displays their image as well as their title and creator data. It also allows for the user to select a specific artwork by clicking on it and to display more information on it ( date, type of artwork, dimensions, medium, provenance of artist, category in which the artwork is included).
+This React-Redux app fetches artworks from the [Art Institute of Chicago API] (https://api.artic.edu/api/v1/artworks).
+
+From the home page the user can input a term related to the artwork that they are searching for (could be the name of the artwork, the srtist, the syle, etc.):
 
 ![AIC Home](/src/assets/Screenshot1.png?raw=true "AIC Home")
+
+The app will then render a listing of all the artworks that match the search criteria, displaying their image as well as their title and creator data. 
+
 ![Search results](/src/assets/Screenshot2.png?raw=true "Search results")
-![Artwork in detail](/src/assets/Screenshot2.png?raw=true "Artwork in detail")
+
+It also allows for the user to select a specific artwork by clicking on it and to display more information on it ( date, type of artwork, dimensions, medium, provenance of artist, category in which the artwork is included).
+
+![Artwork in detail](/src/assets/Screenshot3.png?raw=true "Artwork in detail")
 
 ### Live Demo
 
@@ -45,7 +53,7 @@ https://www.loom.com/share/d720b95281004009babba124e75916cd
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/German-Cobian/Artworks/issues).
+Feel free to check the [issues page](https://github.com/German-Cobian/Art-Gallery/issues).
 
 ## Show your support
 
@@ -61,4 +69,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 [Creative Commons]
-[MIT licensed](https://github.com/German-Cobian/Artworks/blob/main/LICENSE).
+[MIT licensed](https://github.com/German-Cobian/Art-Gallery/blob/main/LICENSE).
