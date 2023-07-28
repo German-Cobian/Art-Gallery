@@ -45,8 +45,8 @@ const ArtworksContainer = () => {
             image={item.image_id}
             artist={item.artist_title}
           />
-
         ))}
+
       </div>
     </div>
   );

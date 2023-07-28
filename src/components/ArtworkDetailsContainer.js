@@ -1,39 +1,35 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
-import { fetchArtworks } from '../redux/artworksApi';
+import { findArtworkById } from '../redux/artworksApi';
 import ArtworkDetails from './ArtworkDetails';
 /* eslint-disable eqeqeq */
 
 const ArtworkDetailsContainer = () => {
   const dispatch = useDispatch();
+  const { id } = useParams();
 
   useEffect(() => {
-    dispatch(fetchArtworks());
+    dispatch(findArtworkById(id));
   }, []);
 
   const artworksState = useSelector((state) => state.artworksReducer);
-  const { id } = useParams();
-
-  const filteredArtworks = artworksState.filter((artwork) => artwork.id == id);
 
   return (
     <div className="artworkdetails">
-      { filteredArtworks.map((item) => (
-        <ArtworkDetails
-          key={item.id}
-          id={item.id}
-          image={item.image_id}
-          title={item.title}
-          type={item.artwork_type_title}
-          medium={item.medium_display}
-          dimensions={item.dimensions}
-          date={item.date_display}
-          artist={item.artist_title}
-          from={item.place_of_origin}
-          category={item.department_title}
-        />
-      ))}
+      <ArtworkDetails
+        key={artworksState.id}
+        id={artworksState.id}
+        image={artworksState.image_id}
+        title={artworksState.title}
+        type={artworksState.artwork_type_title}
+        medium={artworksState.medium_display}
+        dimensions={artworksState.dimensions}
+        date={artworksState.date_display}
+        artist={artworksState.artist_title}
+        from={artworksState.place_of_origin}
+        category={artworksState.department_title}
+      />
     </div>
   );
 };
